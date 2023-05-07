@@ -1,0 +1,217 @@
+
+.cards {
+  margin-top: 5%;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cards-item {
+  width: 30%;
+  background-color: var(--white);
+}
+
+  .cards-item > img {
+    margin-bottom: 7%;
+    width: 100%;
+  }
+
+    .cards-item > img:hover {
+      filter: brightness(.8);
+    }
+
+.card-title {
+  font-size: 39px;
+  color: var(--brown);
+  text-decoration: none;
+  font-family: Miama;
+}
+
+  .card-title:hover {
+    color: var(--orange);
+  }
+
+.card-content {
+  width: 80%;
+  color: var(--pastel);
+  font-size: 13px;
+  line-height: 2rem;
+  font-weight: 600;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.banner-city {
+  background-image: url("../../../assets/images/city.jpeg");
+  height: 85vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 70px;
+  color: var(--white);
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.subtitle-white {
+  font-size: 50px;
+  color: var(--white);
+  font-weight: 700;
+  text-align: center;
+}
+
+.grey {
+  background-color: var(--grey);
+}
+
+.big-button {
+  border: 2px solid var(--white);
+  color: var(--white);
+  background: none;
+  padding: 20px;
+  margin: 3%;
+  font-size: 20px;
+  border-radius: 7px;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+  .big-button:hover {
+    background-color: var(--orange);
+    border: 2px solid var(--brown);
+  }
+
+.cards-countries {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cards-countries-item {
+  text-align: center;
+  width: 30%;
+}
+
+.country-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.country-title {
+  color: var(--brown);
+  font-size: 30px;
+  text-decoration: none;
+  font-family: Miama;
+}
+
+  .country-title:hover {
+    color: var(--orange);
+  }
+
+.country-price {
+  color: var(--orange);
+  font-size: 20px;
+}
+
+.countries-button {
+  color: var(--orange);
+  background-color: var(--white);
+  padding: 7px 40px;
+  font-size: 20px;
+  margin: 10%;
+  border-radius: 7px;
+  font-weight: 400;
+  font-size: 13px;
+  border: 2px solid var(--orange);
+  text-decoration: none;
+  align-self: center;
+}
+
+  .countries-button:hover {
+    background-color: var(--orange);
+    color: var(--white);
+  }
+
+.excursions-box {
+  display: flex;
+  justify-content: center;
+  width: 95%;
+  margin: 10% auto;
+}
+
+  .excursions-box > img {
+    width: 50%;
+  }
+
+.excursions-wrapper {
+  background-color: var(--orange);
+  width: 50%;
+}
+.excursions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5%;
+}
+
+.excursions-box .big-button:hover {
+  background-color: var(--brown);
+  border: 2px solid var(--brown);
+}
+
+.airport-wrapper {
+  margin-top: 7%;
+  background-image: url("../../../assets/images/airport.jpeg");
+  height: 85vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 70px;
+  color: var(--white);
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .cards-item {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .title {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .excursions-box {
+    width: 85%;
+    margin: 10% auto;
+    height: 50vh;
+  }
+
+    .excursions-box > img {
+      height: 50vh;
+      object-fit: cover;
+    }
+  .excursions {
+      padding: 10% 5%;
+  }
+  .big-button {
+    padding: 15px 26px;
+    margin: 6%;
+    font-size: 13px;
+    border-radius: 5px;
+  }
+  .airport-wrapper {
+    background-position: center;
+  }
+  }

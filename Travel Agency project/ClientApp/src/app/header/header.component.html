@@ -1,0 +1,85 @@
+
+<header id="start">
+    <a class="logo" [routerLink]="['/']"><img src="./assets/images/logotype.jpg"></a>
+    <ul>
+        <li><a class="nav-menu" [routerLink]="['/search-tours']" alt="Search Tours">ПОШУК ТУРІВ</a></li>
+        <li class="nav-menu">|</li>
+        <li><a class="nav-menu" [routerLink]="['/hot-tours']" alt="Hot Tours">ГАРЯЧІ ТУРИ</a></li>
+        <li class="nav-menu">|</li>
+
+        <li>
+            <div class="nav-menu-box">
+                <a class="nav-menu" [routerLink]="['/tours']" alt="Tour Types">ТИПИ ТУРІВ</a>
+                <div class="drop-down-menu">
+                    <ul class="drop-down-menu-list">
+                        <li><a class="drop-down-menu-list-item" href="#">ЕКСКУРСІЙНІ ТУРИ</a></li>
+                        <li><a class="drop-down-menu-list-item" [routerLink]="['/gastro-tury']">ГАСТРО-ТУРИ</a></li>
+                        <li><a class="drop-down-menu-list-item" [routerLink]="['/girskolyzhni-tury']">ГІРСЬКОЛИЖНІ ТУРИ</a></li>
+                        <li><a class="drop-down-menu-list-item" [routerLink]="['/cruises']">КРУЇЗИ</a></li>
+                        <li><a class="drop-down-menu-list-item" href="#">ВЕСІЛЬНІ ТУРИ</a></li>
+                        <li><a class="drop-down-menu-list-item" href="#">ІНДИВІДУАЛЬНІ ТУРИ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li class="nav-menu">|</li>
+
+        <li>
+            <div class="nav-menu-box">
+                <a class="nav-menu" [routerLink]="['/countries']" alt="Countries">КРАЇНИ</a>
+
+                <div class="drop-down-menu">
+                    <ul class="drop-down-menu-list">
+                        <li><a class="drop-down-menu-list-item" href="#">ГРЕЦІЯ</a></li>
+                        <li><a class="drop-down-menu-list-item" href="#">ДОМІНІКАНА</a></li>
+                        <li><a class="drop-down-menu-list-item" href="#">ЄГИПЕТ</a></li>
+                        <li><a class="drop-down-menu-list-item" href="#">ІНДІЯ</a></li>
+                        <li><a class="drop-down-menu-list-item" href="#">ІСПАНІЯ</a></li>
+                        <li><a class="drop-down-menu-list-item" href="#">МАЛЬДІВИ</a></li>
+                        <li><a class="drop-down-menu-list-item" href="#">ОАЄ</a></li>
+                        <li><a class="drop-down-menu-list-item" href="#">ТАЇЛАНД</a></li>
+                        <li><a class="drop-down-menu-list-item" href="#">ТУРЕЧЧИНА</a></li>
+                        <li><a class="drop-down-menu-list-item" href="#">ШРІ-ЛАНКА</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </li>
+
+        <li class="nav-menu">|</li>
+        <li>
+            <div class="nav-menu-box">
+                <a class="nav-menu" href="#" alt="Services">ПОСЛУГИ</a>
+                <div class="drop-down-menu">
+                    <ul class="drop-down-menu-list">
+                        <li><a class="drop-down-menu-list-item" href="#">ПРОДАЖ ТУРІВ</a></li>
+                        <li><a class="drop-down-menu-list-item" href="#">АВІАКВИТКИ</a></li>
+                        <li><a class="drop-down-menu-list-item" href="#">ВІЗОВА ПІДТРИМКА</a></li>
+                        <li><a class="drop-down-menu-list-item" href="#">СТРАХУВАННЯ</a></li>
+                        <li><a class="drop-down-menu-list-item" href="#">TRAVELSIM</a></li>
+                        <li><a class="drop-down-menu-list-item" href="#">ОСВІТА ЗА КОРДОНОМ</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </li>
+        <li class="nav-menu">|</li>
+        <li>
+            <div class="nav-menu-box">
+                <a class="nav-menu" href="#" alt="About">ПРО АГЕНСТВО</a>
+                <div class="drop-down-menu">
+                    <ul class="drop-down-menu-list">
+                        <li><a class="drop-down-menu-list-item" href="#">НОВИНИ</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </li>
+        <li class="nav-menu">|</li>
+        <li>
+
+            <a class="nav-menu" [routerLink]="['/main-contacts']" alt="Contacts">КОНТАКТИ</a>
+
+        </li>
+    </ul>
+</header>

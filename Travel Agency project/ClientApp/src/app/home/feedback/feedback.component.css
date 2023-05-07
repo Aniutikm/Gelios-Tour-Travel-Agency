@@ -1,0 +1,104 @@
+.feedback {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("../../../assets/images/vidguky.jpeg");
+}
+
+.feedback-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 27%;
+  margin-bottom: 5%;
+}
+
+.left-arrows {
+  transform: translateX(-100vh);
+  animation: slideLeft 1s linear forwards;
+}
+
+.right-arrows {
+  transform: translateX(100px);
+  animation: slideRight 1s linear forwards;
+}
+
+.feedback-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 7%;
+  box-sizing: border-box;
+  margin-top: 5%;
+  color: var(--pastel);
+  font-size: 18px;
+  text-align: center;
+  background-color: var(--white);
+  line-height: 2rem;
+  font-weight: 400;
+  width: 60%;
+  height: 100%;
+}
+
+.left-arrows {
+  color: var(--white);
+  font-size: 2rem;
+}
+
+.right-arrows {
+  color: var(--white);
+  font-size: 2rem;
+}
+
+.client-country {
+  margin-top: 3%;
+  color: var(--white);
+  font-size: 17px;
+}
+
+.lapky {
+  background-color: #80c4c4;
+  color: var(--white);
+  border-radius: 50px;
+  font-size: 2rem;
+  width: 8vh;
+  height: 8vh;
+  position: absolute;
+  top: -13%;
+  right: 45%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+  .lapky > fa-icon {
+    font-size: 25px;
+  }
+.subtitle-white {
+  font-size: 50px;
+  color: var(--white);
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .feedback {
+      background-position: center;
+  }
+  .feedback-wrapper {
+     height: 40%;
+     margin-top: 5%;
+  }
+    .subtitle-white {
+    font-size: 43px;
+  }
+  .lapky {
+     top: -10%;
+  }
+    .lapky > fa-icon {
+        font-size: 25px;
+    }
+    }

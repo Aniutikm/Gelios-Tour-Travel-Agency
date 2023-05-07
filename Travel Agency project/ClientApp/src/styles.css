@@ -1,0 +1,93 @@
+@import url("./assets/animation.css");
+
+:root {
+  --pastel: #7e6c5c;
+  --orange: #e09654;
+  --brown: #9e6d54;
+  --white: #fff;
+  --dark-brown: #766055;
+  --grey: #f0f0ed;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: Miama;
+  src: url(./assets/Aventador script.ttf);
+}
+
+body {
+  margin: 0 auto;
+  font-family: 'PT Serif', serif;
+}
+
+.screen {
+  width: 85%;
+  margin: 0 auto;
+}
+section {
+  margin-bottom: 7%;
+}
+.title {
+  display: flex;
+  color: var(--brown);
+  font-size: 46px;
+  text-align: center;
+  font-weight: 100;
+  font-family: Miama;
+  align-items: center;
+  white-space: nowrap;
+}
+.subtitle {
+  font-size: 43px;
+  color: var(--brown);
+  text-align: center;
+  font-weight: 700;
+  margin-top: 2%;
+}
+
+.left-line {
+  width: 48%;
+  height: 1px;
+  background-color: var(--brown);
+  margin-top: 0.3em;
+  margin-right: 2%;
+  opacity: 30%;
+}
+
+.right-line {
+  width: 48%;
+  height: 1px;
+  background-color: var(--brown);
+  opacity: 30%;
+  margin-top: 0.3em;
+  margin-left: 2%;
+}
+
+.top-padding {
+  padding-top: 7%;
+}
+
+#white {
+  color: var(--white);
+}
+
+.cross {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  color: var(--orange);
+  text-align: center;
+  font-weight: 700;
+  font-size: 15px;
+}
+@media screen and (max-width: 768px) {
+  .subtitle {
+    font-size: 36px;
+  }
+  .screen {
+      width: 100%;
+  }
+}
+

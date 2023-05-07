@@ -1,0 +1,138 @@
+﻿/* themes for hot_showcase | autor: Denis Zelenko | www.ittour.com.ua */
+
+#showcase_hotprice_v3_showcase_module #ittHS .itt_hs_page_loader {
+  border-right-color: #F7CA18;
+}
+
+#showcase_hotprice_v3_showcase_module #ittHS .itt_bg_color .itt_hs_header {
+  background: #F7CA18;
+}
+
+#showcase_hotprice_v3_showcase_module #ittHS .itt_hs_content_wrap_abs:after {
+  background-color: #F7CA18;
+}
+
+#showcase_hotprice_v3_showcase_module #ittHS .itt_border_color {
+  border-left-color: #F7CA18;
+  border-bottom-color: #F7CA18;
+}
+
+.nicescrollht-cursors {
+  background: #F7CA18;
+}
+
+#showcase_hotprice_v3_showcase_module #ittHS.hs_nm_large .itt_head_hsitem:not(:first-child),
+#showcase_hotprice_v3_showcase_module #ittHS.hs_ex_large .itt_head_hsitem:not(:first-child),
+#showcase_hotprice_v3_showcase_module #ittHS.hs_small .itt_head_hsitem:not(:first-child),
+#showcase_hotprice_v3_showcase_module #ittHS.hs_large .itt_head_hsitem:not(:first-child) {
+  border-left: 1px solid #fff;
+}
+
+#showcase_hotprice_v3_showcase_module #ittHS .itt_hs__selected_info_pp a:hover,
+#showcase_hotprice_v3_showcase_module #ittHS .itt_hs__selected_info_pp a:active {
+  background: #D35400;
+}
+
+#showcase_hotprice_v3_showcase_module #ittHS .itt_hhs_text_wrap a.active,
+#showcase_hotprice_v3_showcase_module #ittHS .itt_hs_country_list a.active,
+#showcase_hotprice_v3_showcase_module #ittHS .itt_hs_select-all a.active {
+  background: #D35400;
+ }
+
+ #ittHSinfo .itt_hi_submit_btn input,
+ #ittHSinfo .itt_hi_send_request_btn {
+  background: #F7CA18 !important;
+ }
+
+ #ittHSinfo .itt_hi_submit_btn input:hover,
+ #ittHSinfo .itt_hi_send_request_btn:hover {
+  background-color: rgba(211, 84, 0, .7) !important;
+}
+
+#ittHSinfo .itt_form_item {
+    background-color: #F7CA18 !important;
+}
+
+#ittHSinfo .itt_ht_form_btn {
+  background-color: #D35400 !important;
+}
+
+#ittHSinfo .itt_ht_form_btn:hover {
+  background-color: rgba(40, 40, 48, .7) !important;
+}
+
+#ittHSinfo .itt_ht_form_input__wrap .itt_form_calendar-icons svg {
+  fill: #D35400 !important;
+}
+
+#ittHSinfo .itt_select_arrow:after {
+  border-color: #D35400;
+}
+
+#ittHSinfo .itt_hi_tabs_name a.active:after {
+  border-bottom-color: #F7CA18;
+}
+
+@media screen and (max-width: 767px) {
+  #ittHSinfo .itt_hi_tabs_name a.active {
+    background: #F7CA18;
+  }
+}
+
+#ittHSinfo .itt_hi_close {
+  background: #F7CA18;
+}
+
+#ittHSinfo .itt_hi_slider_arrow {
+  background: #F7CA18;
+}
+
+#ittHSinfo .itt_service_incos {
+  background: #F7CA18;
+}
+
+#showcase_hotprice_v3_showcase_module #ittHS .itt_hs_price_wrap {
+  background: #e7505b;
+}
+
+#showcase_hotprice_v3_showcase_module #ittHS .itt_hs_main_wrap {
+  background: #e4dede;
+}
+
+#showcase_hotprice_v3_showcase_module #ittHS .itt_hs_head_text {
+  color: #fff;
+}
+
+#showcase_hotprice_v3_showcase_module #ittHS .itt_hscountry_selected .itt_hs_head_icons svg {
+  stroke: #fff;
+}
+
+#showcase_hotprice_v3_showcase_module #ittHS .itt_hshotel_wrap .itt_hs_head_icons svg path, 
+#showcase_hotprice_v3_showcase_module #ittHS .itt_hs_city_selected .itt_hs_head_icons svg path, 
+#showcase_hotprice_v3_showcase_module #ittHS .itt_night_selected .itt_hs_head_icons svg path, 
+#showcase_hotprice_v3_showcase_module #ittHS .itt_hsfood_selected .itt_hs_head_icons svg path {
+  fill: #fff;
+}
+
+#showcase_hotprice_v3_showcase_module #ittHS .itt_hs_head_text:after {
+  border-bottom-color: #fff;
+  border-right-color: #fff;
+}
+
+#showcase_hotprice_v3_showcase_module #ittHS .itt_hs_desctop_star a.selected svg {
+  fill: #fff;
+}
+
+#ittHSinfo .itt-toggle-block #itt-toggle-order-form{
+  background-color: #F7CA18!important;
+}
+
+#ittHSinfo .itt-toggle-block{
+  border: 2px solid #F7CA18!important;
+}
+
+#showcase_hotprice_v3_showcase_module .ing_range {
+  background: #D35400;
+  opacity: .75;
+  color: #fff !important;
+}

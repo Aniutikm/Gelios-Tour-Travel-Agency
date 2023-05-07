@@ -1,0 +1,20 @@
+/*@import url("./assets/javaScript.js");*/
+.arrow {
+  background-color: var(--orange);
+  color: var(--white);
+  padding: 10px 12px;
+  position: fixed;
+  bottom: -50px;
+  right: 30px;
+  opacity: 0;
+  transition: 2s ease;
+}
+
+  .arrow.active {
+    bottom: 30px;
+    opacity: 1;
+  }
+
+  .arrow:hover {
+    background-color: var(--brown);
+  }

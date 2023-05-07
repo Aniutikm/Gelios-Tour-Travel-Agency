@@ -1,0 +1,43 @@
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    margin-top: 100px;
+  }
+
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+@keyframes slideB {
+  0% {
+    opacity: 0;
+    margin-top: 100px;
+  }
+
+  100% {
+    opacity: 1;
+    margin-top: 3%;
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(-100vh);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(100vh);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}

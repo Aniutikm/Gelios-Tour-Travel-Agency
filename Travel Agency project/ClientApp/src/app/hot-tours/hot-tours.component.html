@@ -1,0 +1,62 @@
+<div class="screen">
+    <app-arrow></app-arrow>
+    <section>
+        <div class="poshuk-turiv-header">
+            <div class="poshuk-turiv-background">
+            </div>
+            <div class="poshuk-turiv-header-wrapper">
+                <div class="poshuk-turiv-title">ГАРЯЧІ ТУРИ</div>
+                <ul class="poshuk-turiv-menu">
+                    <li><a class="poshuk-turiv-menu-item" [routerLink]="['/']">ГОЛОВНА</a></li>
+                    <li class="poshuk-turiv-menu-item">|</li>
+                    <li class="poshuk-turiv-menu-item">ГАРЯЧІ ТУРИ</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="minimal-prices-box">
+        <div>
+        </div>
+        <div class="side-menu-wrapper">
+            <div class="side-menu">
+                <div class="side-menu-list-title">Країни</div>
+                <ul class="side-menu-list">
+                    <li><a class="side-menu-list-item" href="#">Греція</a></li>
+                    <li><a class="side-menu-list-item" href="#">Домінікана</a></li>
+                    <li><a class="side-menu-list-item" href="#">Єгипет</a></li>
+                    <li><a class="side-menu-list-item" href="#">Індія</a></li>
+                    <li><a class="side-menu-list-item" href="#">Іспанія</a></li>
+                    <li><a class="side-menu-list-item" href="#">Мальдіви</a></li>
+                </ul>
+
+                <div class="side-menu-line"></div>
+
+                <div class="side-menu-list-title">Послуги</div>
+                <ul class="side-menu-list">
+                    <li><a class="side-menu-list-item" href="#">Продаж турів</a></li>
+                    <li><a class="side-menu-list-item" href="#">Авіаквитки</a></li>
+                    <li><a class="side-menu-list-item" href="#">Візова підтримка</a></li>
+                    <li><a class="side-menu-list-item" href="#">Страхування</a></li>
+                    <li><a class="side-menu-list-item" href="#">TravelSiM</a></li>
+                </ul>
+
+
+                <div class="side-menu-line"></div>
+
+
+                <div class="side-menu-list-title">Типи турів</div>
+                <ul class="side-menu-list">
+                    <li><a class="side-menu-list-item" href="#">Екскурсійні тури</a></li>
+                    <li><a class="side-menu-list-item" asp-action="GastroTury">Гастро-тури</a></li>
+                    <li><a class="side-menu-list-item" asp-action="GirskolyzhniTury">Гірськолижні тури</a></li>
+                    <li><a class="side-menu-list-item" asp-action="Cruises">Круїзи</a></li>
+                    <li><a class="side-menu-list-item" href="#">Весільні тури</a></li>
+                    <li><a class="side-menu-list-item" href="#">Індивідуальні тури</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+    <app-query></app-query>
+</div>

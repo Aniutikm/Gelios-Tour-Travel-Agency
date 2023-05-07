@@ -1,0 +1,53 @@
+<section>
+    <div class="title">
+        <span class="left-line"></span>
+        Тури зі знижками
+        <span class="right-line"></span>
+    </div>
+    <div class="cross">x x x x</div>
+    <div class="subtitle">Обирайте кращі гарячі тури</div>
+    <div class="search-tours-box">
+        <form method="post" asp-action="Index">
+            <div class="first-column">
+                <label>Звідки</label>
+                <select asp-for="Cities.SelectedValue" asp-items="Model.Cities.Result"></select>
+                <label>Куди</label>
+                <select asp-for="Countries.SelectedValue" asp-items="Model.Countries.Result"></select>
+            </div>
+            <div class="second-column">
+                <label>Дата вильоту з... по...</label>
+                <div>
+                    <input asp-for="Before" />
+                    <input asp-for="After" />
+                </div>
+                <div>
+                    <label>Категорія</label>
+                    <label>Харчування</label>
+                    <label>Валюта туру</label>
+
+                </div>
+                <div>
+                    <select asp-for="HotelClasses.SelectedValue" asp-items="Model.HotelClasses.Result"></select>
+                    <select asp-for="Meal.SelectedValue" asp-items="Model.Meal.Result"></select>
+                    <select asp-for="Currencies.SelectedValue" asp-items="Model.Currencies.Result"></select>
+                </div>
+            </div>
+            <div class="third-column">
+                <label>Ночей від... до...</label>
+                <div>
+                    <input asp-for="NightsMin" />
+                    <input asp-for="NightsMax" />
+                </div>
+                <label>Ціна від... до...</label>
+                <div>
+                    <input asp-for="PriceMin" />
+                    <input asp-for="PriceMax" />
+                </div>
+            </div>
+
+            <div class="search-tours-button-position">
+                <button class="search-tours-button" type="submit" href="#">Знайти</button>
+            </div>
+        </form>
+    </div>
+</section>

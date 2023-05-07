@@ -1,0 +1,46 @@
+.contacts-menu {
+  display: flex;
+  justify-content: space-around;
+  margin: 5%;
+}
+
+.contacts-menu-item {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+  width: 20%;
+}
+
+.tel-email {
+  margin-top: 5%;
+  color: var(--orange);
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.address {
+  margin-top: 5%;
+  color: var(--pastel);
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.tel-email:hover {
+  color: var(--pastel);
+}
+.country-title {
+  color: var(--brown);
+  font-size: 30px;
+  text-decoration: none;
+  font-family: Miama;
+}
+
+  .country-title:hover {
+    color: var(--orange);
+  }
+.vertical-line {
+  width: 1px;
+  background-color: var(--brown);
+  opacity: 30%;
+}

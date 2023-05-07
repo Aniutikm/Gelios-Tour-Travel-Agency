@@ -1,0 +1,147 @@
+.poshuk-turiv-header {
+  height: 35vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  position: relative;
+}
+
+.poshuk-turiv-background {
+  background-image: url("../../assets/images/poshukTuriv.jpeg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: brightness(.5) contrast(.7);
+}
+
+.poshuk-turiv-header-wrapper {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white);
+  font-weight: 700;
+  margin: 0 auto;
+  z-index: 100;
+}
+
+.poshuk-turiv-title {
+  font-size: 40px;
+}
+
+.poshuk-turiv-menu {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.poshuk-turiv-menu-item {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.country-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.country-title {
+  color: var(--brown);
+  font-size: 30px;
+  text-decoration: none;
+  font-family: Miama;
+}
+
+  .country-title:hover {
+    color: var(--orange);
+  }
+
+.country-price {
+  color: var(--orange);
+  font-size: 20px;
+}
+
+.countries-button {
+  color: var(--orange);
+  background-color: var(--white);
+  padding: 7px 40px;
+  font-size: 20px;
+  margin: 10%;
+  border-radius: 7px;
+  font-weight: 400;
+  font-size: 13px;
+  border: 2px solid var(--orange);
+  text-decoration: none;
+  align-self: center;
+}
+
+  .countries-button:hover {
+    background-color: var(--orange);
+    color: var(--white);
+  }
+
+
+.side-menu-wrapper {
+  background-color: var(--grey);
+}
+
+.side-menu-list-title {
+  padding-top: 10%;
+  font-size: 18px;
+  color: var(--brown);
+  padding-left: 15%;
+}
+
+.side-menu-list {
+  padding-bottom: 10%;
+  padding-left: 20%;
+}
+
+.side-menu-list-item {
+  color: var(--brown);
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 2rem;
+}
+
+.side-menu-list > li::marker {
+  color: var(--orange);
+}
+
+.side-menu-list-item:hover {
+  color: var(--orange);
+}
+
+.side-menu-line {
+  height: 1px;
+  background-color: var(--brown);
+  opacity: 30%;
+}
+.minimal-prices-box {
+  display: flex;
+  justify-content: space-around;
+}
+
+  .minimal-prices-box > div:first-of-type {
+    width: 60%;
+  }
+
+  .minimal-prices-box > div:last-of-type {
+    background-color: var(--grey);
+    width: 33%;
+  }
+@media screen and (max-width: 768px) {
+
+  .poshuk-turiv-title {
+    font-size: 30px;
+  }
+
+  .poshuk-turiv-menu {
+    width: 40%;
+  }
+}

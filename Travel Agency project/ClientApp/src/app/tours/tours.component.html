@@ -1,0 +1,58 @@
+<div class="screen">
+    <app-arrow></app-arrow>
+    <section>
+        <div class="poshuk-turiv-header">
+            <div class="poshuk-turiv-background">
+            </div>
+            <div class="poshuk-turiv-header-wrapper">
+                <div class="poshuk-turiv-title">ТИПИ ТУРІВ</div>
+                <ul class="poshuk-turiv-menu">
+                    <li><a class="poshuk-turiv-menu-item" [routerLink]="['/']">ГОЛОВНА</a></li>
+                    <li class="poshuk-turiv-menu-item">|</li>
+                    <li class="poshuk-turiv-menu-item">ТИПИ ТУРІВ</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="tour-types">
+            <div>
+                <a class="tour-types-title" href="#">Екскурсійні тури</a>
+                <img src="./assets/images/ekskursiyni_tury.jpeg">
+            </div>
+            <div>
+                <a class="tour-types-title" [routerLink]="['/gastro-tury']">Гастро-тури</a>
+                <img src="./assets/images/gastro_tury.jpeg">
+            </div>
+        </div>
+        <div class="tours-line"></div>
+
+        <div class="tour-types">
+            <div>
+                <a class="tour-types-title" [routerLink]="['/girskolyzhni-tury']">Гірськолижні тури</a>
+                <img src="./assets/images/girskolyzhni_tury.jpeg">
+            </div>
+            <div>
+                <a class="tour-types-title" [routerLink]="['/cruises']">Круїзи</a>
+                <img src="./assets/images/kruizy.jpeg">
+            </div>
+        </div>
+
+        <div class="tours-line"></div>
+
+        <div class="tour-types">
+            <div>
+                <a class="tour-types-title" href="#">Весільні тури</a>
+                <img src="./assets/images/vesilni_tury.jpeg">
+            </div>
+            <div>
+                <a class="tour-types-title" href="#">Індивідуальні тури</a>
+                <img src="./assets/images/indyvidualni_tury.jpeg">
+            </div>
+        </div>
+    </section>
+
+    <app-query></app-query>
+</div>
+

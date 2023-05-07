@@ -1,0 +1,228 @@
+
+.contacts-menu {
+  display: flex;
+  justify-content: space-around;
+  margin: 5%;
+}
+
+.contacts-menu-item {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+  width: 20%;
+}
+
+.tel-email {
+  margin-top: 5%;
+  color: var(--orange);
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.address {
+  margin-top: 5%;
+  color: var(--pastel);
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.tel-email:hover {
+  color: var(--pastel);
+}
+.contact-info {
+  margin-top: 6%;
+  margin-bottom: 3%;
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+}
+
+.contact-info-column {
+  display: flex;
+  flex-direction: column;
+  width: 47%;
+}
+
+.contact-info input {
+  height: 100%;
+  border: transparent;
+  box-sizing: border-box;
+  padding-left: 30px;
+  outline: none;
+  transition: 0.2s;
+}
+
+  .contact-info input:focus {
+    border: 1px solid var(--brown);
+  }
+#size {
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 5%;
+}
+
+#ordinary-font {
+  font-family: 'PT Serif', serif;
+}
+.country-title {
+  color: var(--brown);
+  font-size: 30px;
+  text-decoration: none;
+  font-family: Miama;
+}
+
+  .country-title:hover {
+    color: var(--orange);
+  }
+.poshuk-turiv-header {
+  height: 35vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  position: relative;
+}
+
+.poshuk-turiv-background {
+  background-image: url("../../assets/images/poshukTuriv.jpeg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: brightness(.5) contrast(.7);
+}
+
+.poshuk-turiv-header-wrapper {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white);
+  font-weight: 700;
+  margin: 0 auto;
+  z-index: 100;
+}
+
+.poshuk-turiv-title {
+  font-size: 40px;
+}
+
+.poshuk-turiv-menu {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.poshuk-turiv-menu-item {
+  text-decoration: none;
+  color: var(--white);
+}
+.vertical-line {
+  width: 1px;
+  background-color: var(--brown);
+  opacity: 30%;
+}
+.query {
+  width: 92%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+  .query span {
+    color: #f00;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .query > textarea {
+    border: transparent;
+    height: 35vh;
+    margin: 0 auto;
+    width: 100%;
+    resize: none;
+    outline: none;
+    transition: 0.2s;
+    box-sizing: border-box;
+    padding: 30px;
+    color: var(--pastel);
+    font-size: 15px;
+  }
+
+    .query > textarea::placeholder {
+      color: var(--pastel);
+      font-size: 15px;
+    }
+
+    .query > textarea:focus {
+      border: 1px solid var(--brown);
+    }
+
+  .query input {
+    color: var(--pastel);
+  }
+
+    .query input::placeholder {
+      color: var(--pastel);
+    }
+
+  .query .subscribe-button {
+    margin: 0 auto;
+    margin-top: 3%;
+    padding: 20px 10px;
+    margin-bottom: 10%;
+    width: fit-content;
+  }
+
+#cancel-margin-bottom {
+  margin-bottom: 0;
+}
+
+.grey {
+  background-color: var(--grey);
+}
+
+.subscribe-button {
+  background-color: var(--orange);
+  border: none;
+  color: var(--white);
+  border-radius: 5px;
+  font-size: 15px;
+  text-decoration: none;
+  padding: 15px;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+
+  .subscribe-button:hover {
+    background-color: var(--brown);
+  }
+
+@media screen and (max-width: 768px) {
+
+  .poshuk-turiv-header {
+    height: 40vh;
+    background-position: center;
+  }
+
+  .poshuk-turiv-background {
+    background-position: center;
+  }
+
+  .poshuk-turiv-title {
+    font-size: 26px;
+  }
+
+  .poshuk-turiv-menu {
+    width: 40%;
+    font-size: 13px;
+  }
+
+  #size {
+    width: 85%;
+  }
+  }
