@@ -61,3 +61,14 @@ footer {
     width: 35%;
   }
   }
+@media screen and (max-width: 425px) {
+  footer {
+      flex-direction: column;
+  }
+    footer > img {
+      display: none;
+    }
+  .social-networks {
+    width: 60%;
+  }
+}

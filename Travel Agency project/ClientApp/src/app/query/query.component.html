@@ -10,16 +10,16 @@
         <div class="contact-info">
             <div class="contact-info-column">
 
-                <input [(ngModel)]="name">
+                <input [(ngModel)]="name" placeholder="Ваше імʼя">
                 <span>{{errorName}}</span>
 
             </div>
             <div class="contact-info-column">
-                <input [(ngModel)]="phone">
+                <input [(ngModel)]="phone" placeholder="Телефон">
                 <span>{{errorPhone}}</span>
             </div>
         </div>
-        <textarea [(ngModel)]="text"></textarea>
+        <textarea [(ngModel)]="text" placeholder="Повідомлення"></textarea>
         <span>{{errorText}}</span>
 
         <span>{{result}}</span>

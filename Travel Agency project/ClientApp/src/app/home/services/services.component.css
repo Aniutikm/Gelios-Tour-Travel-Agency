@@ -33,6 +33,10 @@
   opacity: 30%;
 }
 @media screen and (max-width: 768px) {
+  .title {
+    width: 85%;
+    margin: 0 auto;
+  }
   .service-menu {
       flex-wrap: wrap;
   }
@@ -61,5 +65,16 @@
   }
   .vertical-line {
       display: none;
+  }
+}
+@media screen and (max-width: 425px) {
+  .service-menu {
+    flex-direction: column;
+  }
+  .service-menu-item {
+      margin: 0 auto;
+  }
+  .menu-title {
+      width: 80%;
   }
 }

@@ -44,3 +44,12 @@
   background-color: var(--brown);
   opacity: 30%;
 }
+@media screen and (max-width: 425px) {
+  .contacts-menu {
+      flex-direction: column;
+  }
+  .contacts-menu-item {
+      margin-top: 10%;
+      width: 70%;
+  }
+  }

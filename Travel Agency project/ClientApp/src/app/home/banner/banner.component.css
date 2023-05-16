@@ -58,3 +58,8 @@
     border-radius: 5px;
   }
 }
+@media screen and (max-width: 425px) {
+  .big-button {
+    padding: 15px;
+  }
+}

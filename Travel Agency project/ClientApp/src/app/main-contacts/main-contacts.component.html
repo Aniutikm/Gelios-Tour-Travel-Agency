@@ -15,27 +15,8 @@
         </div>
     </section>
 
-    <section>
-        <div class="contacts-menu">
-            <div class="contacts-menu-item">
-                <div class="country-title" id="ordinary-font">Телефон</div>
-                <div class="cross">x x x x</div>
-                <a class="tel-email" href="#">+38 066 375 10 62</a>
-            </div>
-            <div class="vertical-line"></div>
-            <div class="contacts-menu-item">
-                <div class="country-title" id="ordinary-font">Адреса</div>
-                <div class="cross">x x x x</div>
-                <a class="address" href="#">м. Київ, бул. Вацлава Гавела, буд. 4, оф. 434</a>
-            </div>
-            <div class="vertical-line"></div>
-            <div class="contacts-menu-item">
-                <div class="country-title" id="ordinary-font">E-mail</div>
-                <div class="cross">x x x x</div>
-                <a class="tel-email" href="#">geliostour@gmail.com</a>
-            </div>
-        </div>
-    </section>
+    <app-contacts></app-contacts>
+
 
     <section class="grey" id="size">
 
@@ -43,31 +24,16 @@
             <div class="contact-info">
                 <div class="contact-info-column">
 
-                    <input [(ngModel)]="name">
+                    <input [(ngModel)]="name" placeholder="Ваше імʼя">
                     <span>{{errorName}}</span>
-
-                    <!--<div *ngIf="name.invalid && (name.dirty || name.touched)"
-                 class="alert">
-
-                <div *ngIf="name.errors?.['required']">
-                    Name is required.
-                </div>
-                <div *ngIf="name.errors?.['minlength']">
-                    Name must be at least 4 characters long.
-                </div>
-                <div *ngIf="name.errors?.['forbiddenName']">
-                    Name cannot be Bob.
-                </div>
-
-            </div>-->
 
                 </div>
                 <div class="contact-info-column">
-                    <input [(ngModel)]="phone">
+                    <input [(ngModel)]="phone" placeholder="Телефон">
                     <span>{{errorPhone}}</span>
                 </div>
             </div>
-            <textarea [(ngModel)]="text"></textarea>
+            <textarea [(ngModel)]="text" placeholder="Повідомлення"></textarea>
             <span>{{errorText}}</span>
 
             <span>{{result}}</span>

@@ -103,3 +103,15 @@
     margin: 0 auto;
   }
 }
+@media screen and (max-width: 425px) {
+  .poshuk-turiv-header-wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .poshuk-turiv-menu-3 {
+    width: 100%;
+    margin: 0 auto;
+  }
+}

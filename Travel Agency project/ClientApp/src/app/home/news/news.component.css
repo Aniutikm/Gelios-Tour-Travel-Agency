@@ -18,6 +18,7 @@
     .tour-programmes-column img:hover {
       filter: brightness(.7);
     }
+
 .menu-title {
   font-size: 25px;
   color: var(--brown);
@@ -32,7 +33,31 @@
   }
 
 @media screen and (max-width: 768px) {
+  .title {
+    width: 85%;
+    margin: 0 auto;
+  }
   .tour-programmes-column img {
     height: 20vh;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .tour-programmes {
+    flex-direction: column;
+    margin-top: 5%;
+  }
+
+  .tour-programmes-column {
+    width: 70%;
+    margin: 5% auto;
+  }
+
+    .tour-programmes-column img {
+      height: 15vh;
+    }
+
+  .menu-title {
+    font-size: 21px;
   }
 }

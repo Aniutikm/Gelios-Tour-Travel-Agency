@@ -148,7 +148,9 @@
   background-color: var(--orange);
   width: 50%;
 }
+
 .excursions {
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -202,16 +204,51 @@
       height: 50vh;
       object-fit: cover;
     }
+
   .excursions {
-      padding: 10% 5%;
+    padding: 10% 5%;
   }
+
   .big-button {
     padding: 15px 26px;
     margin: 6%;
     font-size: 13px;
     border-radius: 5px;
   }
+
   .airport-wrapper {
     background-position: center;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .cards-item {
+    width: 60%;
+  }
+
+  .excursions-box {
+    flex-direction: column;
+    width: 73%;
+    margin: 25% auto;
+    height: 68vh;
+  }
+
+    .excursions-box > img {
+      width: 100%;
+      height: 40%;
+    }
+  .excursions-wrapper {
+    width: 100%;
+    height: 60%;
+  }
+  .subtitle {
+      font-size: 24px;
+  }
+  .excursions {
+    padding: 20px 10px;
+  }
+  .subtitle-white {
+      font-size: 33px;
+      width: 70%;
   }
   }

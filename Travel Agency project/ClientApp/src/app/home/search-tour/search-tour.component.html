@@ -46,8 +46,37 @@
             </div>
 
             <div class="search-tours-button-position">
-                <button class="search-tours-button" type="submit" href="#">Знайти</button>
+                <button class="search-tours-button" (click)="Search()" href="#">Знайти</button>
             </div>
         </form>
     </div>
+
+
+    
+        <section class="search-tours-box">
+            <ul>
+                <div *ngFor="let hotel of hotels">
+                    <div class="margin-li"></div>
+                <li>
+                    <img src="{{hotel.hImage}}">
+                    <div class="search-tours-right">
+                        <p class="hotel-name">{{hotel.hName}}</p>
+                        <div class="li-right">
+                            <p>{{hotel.date}} | {{hotel.day}}</p>
+                            <p>{{hotel.nights}}</p>
+
+                            <p class="price">${{hotel.price}}</p>
+                        </div>
+                    </div>
+                </li>
+    </div>
+    </ul>
+
+
+    </section>
+
+
+
+   
 </section>
+

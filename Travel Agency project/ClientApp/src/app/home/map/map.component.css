@@ -14,3 +14,10 @@
     height: 45vh;
   }
 }
+@media screen and (max-width: 425px) {
+  .map {
+    width: 75%;
+    height: 25vh;
+    margin: 15% auto;
+  }
+}
