@@ -27,9 +27,11 @@ body {
   width: 85%;
   margin: 0 auto;
 }
+
 section {
   margin-bottom: 7%;
 }
+
 .title {
   display: flex;
   color: var(--brown);
@@ -39,13 +41,16 @@ section {
   font-family: Miama;
   align-items: center;
   white-space: nowrap;
+  justify-content: center;
 }
+
 .subtitle {
   font-size: 43px;
   color: var(--brown);
   text-align: center;
   font-weight: 700;
   margin-top: 2%;
+  
 }
 
 .left-line {
@@ -82,23 +87,29 @@ section {
   font-weight: 700;
   font-size: 15px;
 }
+
 @media screen and (max-width: 768px) {
   .subtitle {
     font-size: 36px;
   }
+
   .screen {
-      width: 100%;
+    width: 100%;
   }
 }
+
 @media screen and (max-width: 425px) {
   section {
-      margin: 15% auto;
+    margin: 15% auto;
   }
+    section:first-of-type {
+      margin-top: 0;
+    }
   .title {
-      font-size: 31px;
+    font-size: 31px;
   }
+
   .subtitle {
     font-size: 21px;
   }
 }
-

@@ -8,6 +8,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class SearchTourComponent implements OnInit {
   hotels: IHotel[] = [];
+  select: BasicInfo | null = null
   httpClient: HttpClient;
   baseUrl: string;
   constructor(http: HttpClient, @Inject('BASE_URL') baseUrl: string) {
@@ -21,6 +22,10 @@ export class SearchTourComponent implements OnInit {
     }, error => console.error(error));
   }
   ngOnInit(): void {
+    this.httpClient.get<BasicInfo>(this.baseUrl + 'search/SearchSelect').subscribe(result => {
+      this.select = result;
+      console.log(this.select, 123);
+    }, error => console.error(error));
   }
 
 }
@@ -31,4 +36,38 @@ interface IHotel {
   day: string,
   price: string,
   nights: string
+}
+
+interface BasicInfo {
+  countries: SelectListModel<CountryInfo>,
+  cities: SelectListModel<CityInfo>,
+  meal: SelectListModel<MealInfo>,
+  currencies: SelectListModel<CurrenciesInfo>,
+  hotelClasses: SelectListModel<HotelClassesInfo>
+}
+
+interface SelectListModel<T> {
+  selectedValue: string,
+  result: T[]
+}
+
+interface CountryInfo {
+  text: string,
+  value: string
+}
+interface CityInfo {
+  text: string,
+  value: string
+}
+interface MealInfo {
+  text: string,
+  value: string
+}
+interface CurrenciesInfo {
+  text: string,
+  value: string
+}
+interface HotelClassesInfo {
+  text: string,
+  value: string
 }

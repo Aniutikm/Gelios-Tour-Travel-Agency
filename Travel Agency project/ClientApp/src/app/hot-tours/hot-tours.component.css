@@ -157,4 +157,10 @@
     width: 80%;
     margin: 0 auto;
   }
-}
+  .minimal-prices-box > div:first-of-type {
+      display: none;
+  }
+  .minimal-prices-box > div:last-of-type {
+      width: 85%;
+  }
+  }

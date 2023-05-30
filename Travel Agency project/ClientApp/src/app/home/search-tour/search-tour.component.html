@@ -6,19 +6,24 @@
     </div>
     <div class="cross">x x x x</div>
     <div class="subtitle">Обирайте кращі гарячі тури</div>
-    <div class="search-tours-box">
+    <div class="search-tours-box" *ngIf="select != null">
         <form method="post" asp-action="Index">
             <div class="first-column">
                 <label>Звідки</label>
-                <select asp-for="Cities.SelectedValue" asp-items="Model.Cities.Result"></select>
+                <select asp-for="Cities.SelectedValue">
+                    <option *ngFor="let city of select.cities.result">{{city.text}}</option>
+                </select>
+                
                 <label>Куди</label>
-                <select asp-for="Countries.SelectedValue" asp-items="Model.Countries.Result"></select>
+                <select asp-for="Countries.SelectedValue">
+                    <option *ngFor="let country of select.countries.result">{{country.text}}</option>
+                </select>
             </div>
             <div class="second-column">
                 <label>Дата вильоту з... по...</label>
                 <div>
-                    <input asp-for="Before" />
-                    <input asp-for="After" />
+                    <input type="date"/>
+                    <input type="date"/>
                 </div>
                 <div>
                     <label>Категорія</label>
@@ -27,16 +32,22 @@
 
                 </div>
                 <div>
-                    <select asp-for="HotelClasses.SelectedValue" asp-items="Model.HotelClasses.Result"></select>
-                    <select asp-for="Meal.SelectedValue" asp-items="Model.Meal.Result"></select>
-                    <select asp-for="Currencies.SelectedValue" asp-items="Model.Currencies.Result"></select>
+                    <select asp-for="HotelClasses.SelectedValue">
+                        <option *ngFor="let hotelClass of select.hotelClasses.result">{{hotelClass.text}}</option>
+                    </select>
+                    <select asp-for="Meal.SelectedValue">
+                        <option *ngFor="let meal of select.meal.result">{{meal.text}}</option>
+                    </select>
+                    <select asp-for="Currencies.SelectedValue">
+                        <option *ngFor="let currency of select.currencies.result">{{currency.text}}</option>
+                    </select>
                 </div>
             </div>
             <div class="third-column">
                 <label>Ночей від... до...</label>
                 <div>
-                    <input asp-for="NightsMin" />
-                    <input asp-for="NightsMax" />
+                    <input type="number" value="0"/>
+                    <input type="number" value="30"/>
                 </div>
                 <label>Ціна від... до...</label>
                 <div>

@@ -9,15 +9,17 @@ header {
   position: sticky;
   top: 0;
 }
+
 .logo {
-    width: 20%;
-}
-.logo img {
-  height: 15vh;
-  width: 100%;
+  width: 20%;
 }
 
-header ul {
+  .logo img {
+    height: 15vh;
+    width: 100%;
+  }
+
+header ul.static-menu {
   width: 70%;
   display: flex;
   justify-content: space-around;
@@ -44,6 +46,7 @@ header ul {
 .nav-menu-box:hover .drop-down-menu {
   display: block;
 }
+
 /*Випадаюче меню*/
 
 .drop-down-menu {
@@ -62,6 +65,7 @@ header ul {
   display: flex;
   flex-direction: column;
 }
+
 .drop-down-menu-list-item {
   color: var(--white);
   text-decoration: none;
@@ -78,13 +82,127 @@ header ul {
     padding: 0 5px;
   }
 
+.mobile-menu {
+  display: none;
+}
+
+
+
 @media screen and (max-width: 768px) {
   header {
+    width: 80%;
+    position: unset;
+    flex-direction: initial;
+    align-items: center;
+  }
+    header ul.static-menu {
+        display:none;
+    }
+
+      .horizontal-line {
+    height: 1px;
+    width: 100%;
+    background-color: whitesmoke;
+    opacity: 0.3;
+  }
+
+  .mobile-menu {
+    display: flex;
+    font-size: 21px;
+    font-weight: 600;
+  }
+
+  #vertical-line {
     display: none;
   }
-}
-@media screen and (max-width: 425px) {
-  header {
-      display: none;
+
+  header ul.main-menu {
+    flex-direction: column;
+    background-color: var(--dark-brown);
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+    display: none;
+    z-index: 1000;
+    width: 40%;
+    align-items: initial;
+    justify-content: initial;
+    margin: 0;
+    padding: 0;
+    transform: translateX(-100vh);
+    animation: img-show-left 0.7s ease-in-out forwards;
+  }
+
+  .main-menu > li {
+    padding: 0 35px;
+  }
+
+  .nav-menu {
+    font-size: 12px;
+    color: white;
+    text-align: left;
+    line-height: 3rem;
+  }
+
+  .main-menu li:hover {
+    background-color: #00000033;
+  }
+
+  .nav-menu:hover {
+    color: white;
+  }
+
+  .mobile-menu {
+    color: var(--brown);
+  }
+
+  .logo {
+    width: 30%;
+  }
+  .nav-menu-box {
+      position: relative;
+  }
+  .drop-down-menu{
+      position: absolute;
+      left: 35vw;
+  }
+  }
+@keyframes img-show-left {
+  from {
+    transform: translateX(-100vh);
+  }
+
+  to {
+    transform: translateX(0);
   }
 }
+
+@media screen and (max-width: 425px) {
+  header ul.main-menu {
+    width: 100%;
+    height: 85vh;
+  }
+
+  .logo {
+    width: 40%;
+  }
+
+    .logo > img {
+      height: 12vh;
+    }
+
+  .mobile-menu {
+    font-size: 21px;
+    font-weight: 600;
+  }
+  .drop-down-menu {
+      width: 100vw;
+      left: 0;
+      
+  }
+  .drop-down-menu-list {
+   text-align: left;
+  }
+  }

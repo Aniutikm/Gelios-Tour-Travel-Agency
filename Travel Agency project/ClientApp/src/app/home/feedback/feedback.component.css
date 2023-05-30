@@ -1,39 +1,32 @@
 .feedback {
-  position: relative;
-  background-repeat: no-repeat;
+  height: 85vh;
+  background-image: url("../../../assets/images/vidguky.jpeg");
   background-size: cover;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background-image: url("../../../assets/images/vidguky.jpeg");
 }
 
 .feedback-wrapper {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   height: 27%;
   margin-bottom: 5%;
+  
+}
+.title {
+    margin-top: 5%;
 }
 
-.left-arrows {
-  transform: translateX(-100vh);
-  animation: slideLeft 1s linear forwards;
-}
-
-.right-arrows {
-  transform: translateX(100px);
-  animation: slideRight 1s linear forwards;
-}
 
 .feedback-content {
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 7%;
-  margin-top: 5%;
+  margin-top: 15%;
   color: var(--pastel);
   font-size: 18px;
   text-align: center;
@@ -44,15 +37,7 @@
   height: 100%;
 }
 
-.left-arrows {
-  color: var(--white);
-  font-size: 2rem;
-}
 
-.right-arrows {
-  color: var(--white);
-  font-size: 2rem;
-}
 
 .client-country {
   margin-top: 3%;
@@ -68,7 +53,7 @@
   width: 8vh;
   height: 8vh;
   position: absolute;
-  top: -13%;
+  top: -16%;
   right: 45%;
   align-items: center;
   display: flex;
@@ -82,6 +67,7 @@
   font-size: 50px;
   color: var(--white);
   font-weight: 700;
+  text-align:center;
 }
 @media screen and (max-width: 768px) {
   .feedback {
@@ -95,24 +81,25 @@
     font-size: 43px;
   }
   .lapky {
-     top: -10%;
+     top: -13%;
   }
     .lapky > fa-icon {
         font-size: 25px;
     }
     }
 @media screen and (max-width: 425px) {
-  .subtitle-white {
-    font-size: 24px;
+  .feedback-wrapper {
+    margin-top: 20%;
+    height: 50%;
   }
-   
-  .feedback-content {
-    font-size: 14px;
+  .feedback-content p {
+    font-size: 13px;
     line-height: 1.5rem;
-    width: 70%;
-    font-weight: 600;
   }
   .lapky {
     right: 40%;
   }
+  .subtitle-white {
+    font-size: 24px;
   }
+}

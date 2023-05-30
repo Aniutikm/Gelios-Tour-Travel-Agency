@@ -172,4 +172,16 @@ input, select {
 }
 
 @media screen and (max-width: 425px) {
-}
+  .search-tours-box form {
+    display: flex;
+    flex-direction: column;
+  }
+  .first-column, .second-column, .third-column {
+      width: 100%;
+  }
+  .search-tours-button-position {
+    margin-top: 15px;
+    width: 25%;
+    align-self: center;
+  }
+  }

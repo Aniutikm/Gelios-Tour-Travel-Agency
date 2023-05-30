@@ -71,12 +71,24 @@ namespace Travel_Agency_project.Controllers
                 });
 
 
-            
-                
-             }
-            return Json(hotels);
-}
 
+
+            }
+            return Json(hotels);
+        }
+        [HttpGet("SearchSelect")]
+        public async Task<IActionResult> SearchSelect()
+        {
+
+            HttpClient client = new HttpClient();
+            var response = await client.GetAsync("https://search.tez-tour.com/tariffsearch/references?locale=ua&formatResult=true&xml=false");
+            var json = await response.Content.ReadAsStringAsync();
+
+            ResponseAll resp = JsonConvert.DeserializeObject<ResponseAll>(json);
+
+            BasicInfo result = resp.GenerateBasic();
+            return Json(result);
+        }
         // GET: /<controller>/
 
     }

@@ -200,4 +200,12 @@
     width: 80%;
     margin: 0 auto;
   }
+  .countries-box {
+    display: flex;
+    flex-direction: column;
+  }
+    .countries-box .cards-item {
+      width: 70%;
+      margin: 0 auto;
+    }
 }
