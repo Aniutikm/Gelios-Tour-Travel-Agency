@@ -18,7 +18,15 @@ header {
     height: 15vh;
     width: 100%;
   }
-
+header ul.main-menu {
+    display:none;
+    width:0;
+    opacity: 0;
+    
+}
+.main-menu {
+    display: none;
+}
 header ul.static-menu {
   width: 70%;
   display: flex;
@@ -89,6 +97,7 @@ header ul.static-menu {
 
 
 @media screen and (max-width: 768px) {
+
   header {
     width: 80%;
     position: unset;
@@ -131,6 +140,7 @@ header ul.static-menu {
     justify-content: initial;
     margin: 0;
     padding: 0;
+    opacity: 1;
     transform: translateX(-100vh);
     animation: img-show-left 0.7s ease-in-out forwards;
   }

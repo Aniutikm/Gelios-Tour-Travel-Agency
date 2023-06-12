@@ -18,7 +18,7 @@ namespace Travel_Agency_project.Controllers
     {
 
         [HttpGet("GetOffers")]
-        public async Task<IActionResult> GetOffers(DateTime date)
+        public async Task<IActionResult> GetOffers([FromQuery]DateTime date)
         {
 
 

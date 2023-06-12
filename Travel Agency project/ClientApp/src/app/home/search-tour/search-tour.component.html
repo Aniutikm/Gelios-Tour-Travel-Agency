@@ -7,13 +7,13 @@
     <div class="cross">x x x x</div>
     <div class="subtitle">Обирайте кращі гарячі тури</div>
     <div class="search-tours-box" *ngIf="select != null">
-        <form method="post" asp-action="Index">
+        <div class="form">
             <div class="first-column">
                 <label>Звідки</label>
                 <select asp-for="Cities.SelectedValue">
                     <option *ngFor="let city of select.cities.result">{{city.text}}</option>
                 </select>
-                
+
                 <label>Куди</label>
                 <select asp-for="Countries.SelectedValue">
                     <option *ngFor="let country of select.countries.result">{{country.text}}</option>
@@ -22,8 +22,8 @@
             <div class="second-column">
                 <label>Дата вильоту з... по...</label>
                 <div>
-                    <input type="date"/>
-                    <input type="date"/>
+                    <input [ngModel]="changeDate | date:'yyyy-MM-dd'" (ngModelChange)="ChangeDate($event)" type="date" />
+                    <input type="date" />
                 </div>
                 <div>
                     <label>Категорія</label>
@@ -46,8 +46,8 @@
             <div class="third-column">
                 <label>Ночей від... до...</label>
                 <div>
-                    <input type="number" value="0"/>
-                    <input type="number" value="30"/>
+                    <input type="number" value="0" />
+                    <input type="number" value="30" />
                 </div>
                 <label>Ціна від... до...</label>
                 <div>
@@ -59,35 +59,30 @@
             <div class="search-tours-button-position">
                 <button class="search-tours-button" (click)="Search()" href="#">Знайти</button>
             </div>
-        </form>
+        </div>
     </div>
 
 
-    
-        <section class="search-tours-box">
-            <ul>
-                <div *ngFor="let hotel of hotels">
-                    <div class="margin-li"></div>
-                <li>
-                    <img src="{{hotel.hImage}}">
-                    <div class="search-tours-right">
-                        <p class="hotel-name">{{hotel.hName}}</p>
-                        <div class="li-right">
-                            <p>{{hotel.date}} | {{hotel.day}}</p>
-                            <p>{{hotel.nights}}</p>
 
-                            <p class="price">${{hotel.price}}</p>
-                        </div>
+    <section class="search-tours-box">
+        <ul class="search-tours-box-item" *ngFor="let hotel of hotels">
+            <li>
+                <img src="{{hotel.hImage}}">
+                <div class="search-tours-right">
+                    <p class="hotel-name">{{hotel.hName}}</p>
+                    <div class="li-right">
+                        <p>{{hotel.date}} | {{hotel.day}}</p>
+                        <p>{{hotel.nights}}</p>
+
+                        <p class="price">${{hotel.price}}</p>
                     </div>
-                </li>
-    </div>
-    </ul>
-
-
+                </div>
+            </li>
+        </ul>
     </section>
 
 
 
-   
+
 </section>
 

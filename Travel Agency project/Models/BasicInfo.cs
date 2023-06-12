@@ -62,7 +62,7 @@ namespace Travel_Agency_project.Models
             result.Countries = new SelectListModel()
             {
                 Result = countries,
-                SelectedValue = countries[22].Value
+                SelectedValue = countries[20].Value
             };
 
             List<SelectListItem> cities = new List<SelectListItem>();

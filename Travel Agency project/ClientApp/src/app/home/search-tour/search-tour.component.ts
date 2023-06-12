@@ -1,5 +1,5 @@
 import { Component, OnInit, Inject } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 
 @Component({
   selector: 'app-search-tour',
@@ -11,14 +11,24 @@ export class SearchTourComponent implements OnInit {
   select: BasicInfo | null = null
   httpClient: HttpClient;
   baseUrl: string;
+
+  changeDate: Date = new Date();
+
   constructor(http: HttpClient, @Inject('BASE_URL') baseUrl: string) {
     this.httpClient = http;
     this.baseUrl = baseUrl;
   }
 
+  ChangeDate(date: any)
+  {
+    console.log(date.toString())
+    this.changeDate = new Date(date.toString())
+  }
   Search(): void {
-    this.httpClient.get<IHotel[]>(this.baseUrl + 'search/GetOffers?Date=2023.05.28').subscribe(result => {
+
+    this.httpClient.get<IHotel[]>(this.baseUrl + 'search/GetOffers?date=' + this.changeDate.toDateString()).subscribe(result => {
       this.hotels = result;
+
     }, error => console.error(error));
   }
   ngOnInit(): void {

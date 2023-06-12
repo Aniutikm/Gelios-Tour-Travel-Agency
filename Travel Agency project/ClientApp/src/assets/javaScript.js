@@ -1,4 +1,4 @@
-window.onscroll = function () {
+/*window.onscroll = function () {
   var length = document.documentElement.scrollTop;
   var limit = 70;
   if (length > limit) {
@@ -7,4 +7,4 @@ window.onscroll = function () {
   else {
     $(".arrow").removeClass("active")
   }
-}
+}*/

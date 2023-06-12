@@ -3,9 +3,13 @@
   background-color: var(--dark-brown);
   width: 100%;
   margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
 }
 
-  .search-tours-box form {
+  .search-tours-box .form {
     color: var(--white);
     font-size: 13px;
     display: flex;
@@ -118,10 +122,10 @@ input, select {
 .search-tours-box li {
   display: flex;
   background-color: var(--white);
-  width: 70%;
-  margin: 0 auto;
-  padding: 2%;
+  width: 80%;
+  margin: 3% auto;
   color: var(--pastel);
+  padding: 1%;
 }
 
 .margin-li {
@@ -144,6 +148,7 @@ input, select {
   text-align: center;
   font-size: 25px;
   color: var(--pastel);
+  margin-top: 5%;
 }
 
 .search-tours-right {
@@ -153,6 +158,9 @@ input, select {
 .price {
   font-size: 20px;
   color: var(--orange);
+}
+.search-tours-box-item {
+    padding-left: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -169,10 +177,20 @@ input, select {
     font-size: 15px;
     padding: 7px 10px;
   }
-}
+  .search-tours-box img {
+    height: 100%;
+    width: 50%;
+  }
+  .search-tours-box li {
+    width: 90%;
+  }
+  .hotel-name {
+      margin-top: 10%;
+  }
+  }
 
 @media screen and (max-width: 425px) {
-  .search-tours-box form {
+  .search-tours-box .form {
     display: flex;
     flex-direction: column;
   }
@@ -183,5 +201,23 @@ input, select {
     margin-top: 15px;
     width: 25%;
     align-self: center;
+  }
+  .search-tours-box li {
+      margin: 5% auto;
+      padding: 0;
+      flex-direction: column;
+      width: 75%;
+
+  }
+  .search-tours-box img {
+      height: 40%;
+      width: 100%;
+  }
+  .hotel-name {
+      margin: 0 auto;
+      width: 90%;
+  }
+  .search-tours-right {
+      width: 100%;
   }
   }
