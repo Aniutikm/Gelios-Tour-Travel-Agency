@@ -208,11 +208,11 @@ header ul.static-menu {
     font-weight: 600;
   }
   .drop-down-menu {
-      width: 100vw;
-      left: 0;
-      
+    width: 100vw;
+    left: -10vw;
+    
   }
   .drop-down-menu-list {
-   text-align: left;
+    text-align: left;
   }
   }

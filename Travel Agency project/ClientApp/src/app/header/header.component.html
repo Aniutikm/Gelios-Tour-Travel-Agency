@@ -17,8 +17,8 @@
 
         <li>
             <div class="nav-menu-box">
-                <a class="nav-menu" [routerLink]="['/tours']" alt="Tour Types">ТИПИ ТУРІВ</a>
-                <div class="drop-down-menu">
+                <a class="nav-menu"  [routerLink]="['/tours']" (click)="toggleDropDownMenu()" alt="Tour Types">ТИПИ ТУРІВ</a>
+                <div class="drop-down-menu" [style.display]="dropDownMenuVisible ? 'block' : 'none'">
                     <ul class="drop-down-menu-list">
                         <li><a class="drop-down-menu-list-item" href="#">ЕКСКУРСІЙНІ ТУРИ</a></li>
                         <li><a class="drop-down-menu-list-item" [routerLink]="['/gastro-tury']">ГАСТРО-ТУРИ</a></li>
@@ -35,9 +35,9 @@
 
         <li>
             <div class="nav-menu-box">
-                <a class="nav-menu" [routerLink]="['/countries']" alt="Countries">КРАЇНИ</a>
+                <a class="nav-menu" [routerLink]="['/countries']" (click)="toggleDropDownMenuC()" alt="Countries">КРАЇНИ</a>
 
-                <div class="drop-down-menu">
+                <div class="drop-down-menu" [style.display]="dropDownMenuVisibleC ? 'block' : 'none'">
                     <ul class="drop-down-menu-list">
                         <li><a class="drop-down-menu-list-item" href="#">ГРЕЦІЯ</a></li>
                         <li><a class="drop-down-menu-list-item" href="#">ДОМІНІКАНА</a></li>
@@ -59,8 +59,8 @@
         <li class="horizontal-line"></li>
         <li>
             <div class="nav-menu-box">
-                <a class="nav-menu" href="#" alt="Services">ПОСЛУГИ</a>
-                <div class="drop-down-menu">
+                <a class="nav-menu" href="#" (click)="toggleDropDownMenuS()" alt="Services">ПОСЛУГИ</a>
+                <div class="drop-down-menu" [style.display]="dropDownMenuVisibleS ? 'block' : 'none'">
                     <ul class="drop-down-menu-list">
                         <li><a class="drop-down-menu-list-item" href="#">ПРОДАЖ ТУРІВ</a></li>
                         <li><a class="drop-down-menu-list-item" href="#">АВІАКВИТКИ</a></li>
@@ -77,8 +77,8 @@
         <li class="horizontal-line"></li>
         <li>
             <div class="nav-menu-box">
-                <a class="nav-menu" href="#" alt="About">ПРО АГЕНСТВО</a>
-                <div class="drop-down-menu">
+                <a class="nav-menu" href="#" (click)="toggleDropDownMenuA()" alt="About">ПРО АГЕНСТВО</a>
+                <div class="drop-down-menu" [style.display]="dropDownMenuVisibleA ? 'block' : 'none'">
                     <ul class="drop-down-menu-list">
                         <li><a class="drop-down-menu-list-item" href="#">НОВИНИ</a></li>
                     </ul>
