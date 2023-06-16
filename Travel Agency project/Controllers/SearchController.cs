@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.WebUtilities;
 using Newtonsoft.Json;
@@ -12,6 +13,7 @@ using Travel_Agency_project.Models;
 
 namespace Travel_Agency_project.Controllers
 {
+    [DisableCors]
     [ApiController]
     [Route("[controller]")]
     public class SearchController : Controller
@@ -76,6 +78,8 @@ namespace Travel_Agency_project.Controllers
             }
             return Json(hotels);
         }
+        
+        [DisableCors]
         [HttpGet("SearchSelect")]
         public async Task<IActionResult> SearchSelect()
         {

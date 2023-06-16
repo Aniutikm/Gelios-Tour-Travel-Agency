@@ -13,9 +13,9 @@ namespace Travel_Agency_project.Models
         public SelectListModel Meal { get; set; }
         public int PriceMin { get; set; }
         public int PriceMax { get; set; }
-        [UIHint("date")]
+        //[UIHint("date")]
         public DateTime Before { get; set; }
-        [UIHint("date")]
+        //[UIHint("date")]
         public DateTime After { get; set; }
         public int NightsMin { get; set; }
         public int NightsMax { get; set; }
